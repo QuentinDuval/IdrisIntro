@@ -1,0 +1,10 @@
+package test_idris
+
+sourcedir = src
+
+modules = Main, Test.Core
+
+executable = example
+main = Main
+
+tests = Test.Core.run_tests
