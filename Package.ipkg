@@ -2,7 +2,7 @@ package test_idris
 
 sourcedir = src
 
-modules = Main, Phantom, Test.Core
+modules = Main, First, Phantom, OutOfBound, Test.Core
 
 executable = example
 main = Main
