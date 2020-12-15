@@ -1,4 +1,4 @@
-module OutOfBound
+module OutOfBound2
 
 
 isInBounds : (k : Nat) -> (xs : List a) -> Dec (InBounds k xs)
@@ -20,7 +20,5 @@ run_test = do
     let i = 2
     -- printLn (getAt l i)
     case isInBounds i l of
-        (Yes _) => do
-            printLn (getAt i l)
-        _ => do
-            printLn "Out of bound"
+        (Yes _) => printLn (getAt i l)
+        _ => printLn "Out of bound"
